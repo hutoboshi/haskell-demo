@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  haskell:
+    build: .
+    container_name: haskell-dev
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./app:/usr/src/app
+    working_dir: /usr/src/app
